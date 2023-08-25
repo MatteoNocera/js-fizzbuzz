@@ -44,28 +44,42 @@ let listElement = document.getElementById('list');
 
 for (let i = 1; i <= 100; i++) {
     //console.log(i);
-    
+
+    const liElement = document.createElement('li');    
 
     if ((i % 3) == 0 && (i % 5)== 0) {
         // se % 3 AND % 5 lascia 0 stampo FizzBuzz
 
         console.log('FizzBuzz');
+        liElement.append('FizzBuzz');
+        listElement.append(liElement);
 
     } else if ((i % 3) == 0) {
         // se il numero % 3 lascia 0 allora stampo Fizz
 
         console.log('Fizz');
+        liElement.append('Fizz');
+        listElement.append(liElement);
 
     } else if ((i % 5) == 0) {
     // se il numero % 5 lascia 0 stampo buzz
 
         console.log('Buzz');
+        liElement.append('Buzz');
+        listElement.append(liElement);
 
     } else {
         // altrimenti stampo il numero
-        
+
         console.log(i);
+        liElement.append(i);
+        listElement.append(liElement);
     }
+
+    
+    
+
+
 }
 
 
