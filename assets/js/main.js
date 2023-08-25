@@ -40,10 +40,36 @@ Tools
 
 // creo un ciclo che stampi in console i numeri da 1 a 100
 
-// se il numero % 3 lascia 0 allora stampo Fizz
+let listElement = document.getElementById('list');
 
-// se il numero % 5 lascia 0 stampo buzz
+for (let i = 1; i <= 100; i++) {
+    //console.log(i);
+    
 
-// se % 3 AND % 5 lascia 0 stampo FizzBuzz
+    if ((i % 3) == 0 && (i % 5)== 0) {
+        // se % 3 AND % 5 lascia 0 stampo FizzBuzz
 
-// altrimenti stampo il numero
+        console.log('FizzBuzz');
+
+    } else if ((i % 3) == 0) {
+        // se il numero % 3 lascia 0 allora stampo Fizz
+
+        console.log('Fizz');
+
+    } else if ((i % 5) == 0) {
+    // se il numero % 5 lascia 0 stampo buzz
+
+        console.log('Buzz');
+
+    } else {
+        // altrimenti stampo il numero
+        
+        console.log(i);
+    }
+}
+
+
+
+
+
+
