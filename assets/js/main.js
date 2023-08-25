@@ -53,6 +53,7 @@ for (let i = 1; i <= 100; i++) {
         console.log('FizzBuzz');
         liElement.append('FizzBuzz');
         listElement.append(liElement);
+        liElement.classList.add('bg-success');
 
     } else if ((i % 3) == 0) {
         // se il numero % 3 lascia 0 allora stampo Fizz
@@ -60,6 +61,7 @@ for (let i = 1; i <= 100; i++) {
         console.log('Fizz');
         liElement.append('Fizz');
         listElement.append(liElement);
+        liElement.classList.add('bg-warning');
 
     } else if ((i % 5) == 0) {
     // se il numero % 5 lascia 0 stampo buzz
@@ -67,6 +69,7 @@ for (let i = 1; i <= 100; i++) {
         console.log('Buzz');
         liElement.append('Buzz');
         listElement.append(liElement);
+        liElement.classList.add('bg-danger');
 
     } else {
         // altrimenti stampo il numero
@@ -74,11 +77,11 @@ for (let i = 1; i <= 100; i++) {
         console.log(i);
         liElement.append(i);
         listElement.append(liElement);
+        liElement.classList.add('bg-primary');
     }
 
-    
-    
-
+    listElement.classList.add('d-flex', 'gap-2', 'list-unstyled', 'flex-wrap', 'justify-content-between')
+    liElement.classList.add('col-3', 'col-md-2', 'col-lg-1', 'text-wrap', 'text-center', 'text-light', 'rounded-pill', 'py-2', 'shadow')
 
 }
 
